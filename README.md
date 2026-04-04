@@ -20,7 +20,7 @@ Learning GIT and Python Foundation
 
     ```
 
-## Python Foundation
+## Python Foundation:
 
 - Primative Variables
 - Function
