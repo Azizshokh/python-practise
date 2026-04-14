@@ -33,10 +33,12 @@ try:
     a = car_dict.speed  # AttributeError
     result = car_dict["origin"]  # KeyError
     print("the result:", result)
-except KeyError as err:
-    print("No origin state property found:", err)
-except AttributeError as err:
-    print("No speed found:", err)
+except Exception as err:
+    print("General Error", err)
+# except (KeyError, AttributeError) as err:
+# print("Error", err)
+# except AttributeError as err:
+# print("No speed found:", err)
 else:
     print("Executed successfully without errors")
 finally:
