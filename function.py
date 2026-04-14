@@ -45,3 +45,18 @@ print("the result3:", result3)
 
 result4 = give_greet("Jack")
 print("the result4:", result4)
+
+
+print("======= SCOPE =======")
+# SCOPE > where a variable is accessible
+
+b = 100  # global variable # 3
+
+
+def calculate(a, b):  # 2
+    c = a * b  # 1
+    print(f"the value of c: {c}")
+
+
+# Call
+calculate(5, 50)
