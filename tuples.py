@@ -33,3 +33,33 @@ print(animals[0])
 
 
 tuple_obj = {"MIT", 100, True, None}
+
+# try avoid these
+people = "ALI", "John"
+aniimas = "elephant",
+
+print("===== Unpacking arguments ======")
+
+groups = ["MIT", "FLEXY", "DEVEX", "MG"]
+# (a, b, c, d) = groups
+(a, b, *z) = groups
+# print(f"a: {a}, b: {b}, c: {c}, d: {d}")
+print(f"a: {a}, b: {b}, z: {z}")  # list
+
+# *args => tuple
+
+
+def calculate(*args):
+    print("*args >", args)
+    total = 1
+    for x in args:
+        total *= x
+    print(f"The type of args: {type(args)}")
+    print(f"The total: {total}")
+    return total
+
+
+# CALL
+calculate(1, 7, 2, 3)
+calculate(0, 2, 300)
+calculate(5, 7)
