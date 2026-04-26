@@ -78,10 +78,10 @@ if not is_student:
     print("Welcome here, do you want to be a student???")
 elif is_admin:
     print("Please, go to this office!!!")
-elif is_guest or is_parent:
-    print("Waiting room is over there!!!")
-    # elif is_parent or is_guest:
-# elif is_guest and is_parent:
+# elif is_guest or is_parent:
 #     print("Waiting room is over there!!!")
+    # elif is_parent or is_guest:
+elif is_guest and is_parent:
+    print("Waiting room is over there!!!")
 else:
     print("Other cases!!!")
