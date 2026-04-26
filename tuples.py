@@ -86,3 +86,15 @@ def greeting(*args, **kwargs):
 
 # CALL
 greeting("Hi", True, 10, name="ALI", age=27)
+
+
+print("===== Zip ======")
+# zip => bir nechta iterable obyektlarni birlashtirish
+tuple1 = (1, 2, 3, 4)
+tuple2 = ("a", "b", "c")
+
+zipped = zip(tuple1, tuple2)
+print("Zipped object:", zipped)
+result = list(zipped)
+# Tarkibini ko'rish uchun list() ga o'tkazamiz
+print(f"Zipped result: {result}")
