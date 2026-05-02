@@ -17,7 +17,7 @@ letters = list("Hello World!!!")
 print("letters:", letters)
 # person_dic = dict(name="ALI", age=27)
 
-fruits = ["apple", "banana", "cherry", "banana"]
+fruits = ["apple", "banana", "cherry",]
 print("Before fruits:", fruits)
 
 fruits[2] = "orange"
